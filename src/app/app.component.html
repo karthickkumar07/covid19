@@ -1,0 +1,70 @@
+<link rel="stylesheet" href="./app.component.css">
+
+<div class="class">
+     TAMILNADU COVID-19 STATUS
+
+</div>
+<br><br>
+<div class="container1">
+  <div class="center1">
+  <label > Select District   </label>
+  <select (change)="getCity($event.target.value)" class="select">
+         <option value="">Select District</option>
+         <option *ngFor="let citi of city">
+           {{citi}}
+         </option>
+  </select>
+</div>
+</div>
+<br>
+<div class="but"style=" border-radius: 20px 20px 20px 20px;">
+  <div class="center" style=" border-radius: 20px 20px 20px 20px;">
+  <button (click)="getCoronaData()"><span>Get Corona virus Data</span>  </button><br><br>
+</div>
+</div>
+  
+
+<div class="container">
+     <div class="row">
+      <div class=" col-sm-4">
+        <div class="card text-center">
+            <div class="card-body">
+                <div class="card-title">
+                   <h4>Active Cases</h4>
+                </div>
+               <div class="card-text">Count of active cases.</div>
+               <a href="#" class="btn btn-warning">{{active}}</a>
+            </div>
+        </div>
+  </div>
+              <div class="col-sm-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <div class="card-title">
+                           <h4>Confirmed Cases</h4>
+                        </div>
+                       <div class="card-text">Count of Confirmed cases.</div>
+                       <a href="#" class="btn btn-danger">{{confirmed}}</a>
+                    </div>
+                </div>
+          </div>
+          
+          <div class="col-sm-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div class="card-title">
+                       <h4>Recovered Cases</h4>
+                    </div>
+                   <div class="card-text">Count of Recovered cases.</div>
+                   <a href="#" class="btn btn-success">{{recovered}}</a>
+                </div>
+            </div>
+     </div>
+</div><br>
+<div class ="deaths">
+  
+ <h4>Total deaths:{{deaths}}</h4>
+</div><br><br><br><br>
+<div class="class" style="background-color: rgb(0, 5, 3); ">
+    <h4>Stay Home Stay Safe!!</h4>
+</div>

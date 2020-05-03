@@ -1,0 +1,130 @@
+
+.class{
+    background-color: rgb(26, 27, 27);
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Fondamento', cursive;
+    color: #fff;
+}
+
+
+h2{
+    text-align: center;
+}
+.container1{
+    margin-left: 40%;
+    align-items: center;
+
+}
+label{
+    font-size: 15px;
+    top:5%;
+}
+
+h4{
+    font-family: Merienda    ;
+}
+
+
+.container{
+    margin-top: 180px;
+    color: #fff;
+   
+}
+.card-body{
+    background-color: black;
+    border-radius: .45em;
+}
+select {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    background: #5c6664;
+    background-image: none;
+    flex: 1;
+    padding: 0 .5em;
+    color:#fff;
+    cursor:pointer;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+  
+   
+ }
+ select::-ms-expand {
+    display: none;
+ }
+ .select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #0c080e;
+    overflow: hidden;
+    border-radius: .45em;
+ }
+ .select::after {
+    content: '\25BC';
+   
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #2b2e2e;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+ }
+ .select:hover::after {
+    color: #23b499;
+ }
+ button:focus { outline-style: none; }
+ 
+
+button{
+ 
+  border: 25%;
+  border-radius: 20px 20px 20px 20px;
+  height: 30px;
+  width: 200px;
+  border-color: rgb(17, 7, 0);
+  background: transparent;
+  color: rgb(5, 5, 5);
+  cursor: pointer;
+}
+button:hover{
+    background: rgb(10, 4, 0);
+    color: #fff;
+
+}
+
+.center {
+  
+    position: absolute;
+    left: 50%;
+    top:38%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .center1{
+    position: absolute;
+    top:24%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .deaths{
+   
+    text-align: center;
+  
+    color: #0c080e;
+    border: 25%;
+    width:250px;
+    border-radius: 20px 20px 20px 20px;
+    border-style: dashed;
+    margin: 0 auto;
+}
